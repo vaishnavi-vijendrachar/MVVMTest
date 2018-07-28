@@ -45,20 +45,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.937" />
 
-        <!--<ImageView-->
-            <!--android:id="@+id/imageView"-->
-            <!--android:layout_width="86dp"-->
-            <!--android:layout_height="86dp"-->
-            <!--android:layout_marginBottom="16dp"-->
-            <!--android:layout_marginEnd="@dimen/margin_left_right"-->
-            <!--android:layout_marginRight="@dimen/margin_left_right"-->
-            <!--android:text="@{listRow.imageHref}"-->
-            <!--app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--app:layout_constraintEnd_toEndOf="parent"-->
-            <!--app:layout_constraintHorizontal_bias="1.0"-->
-            <!--app:layout_constraintStart_toEndOf="@+id/subtitle"-->
-            <!--app:layout_constraintStart_toStartOf="parent"-->
-            <!--android:background= "@drawable/placeholder" />-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:src="@{listRow.imageHref, default = @drawable/placeholder}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/subtitle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background= "@drawable/placeholder" />
     </LinearLayout>
 </LinearLayout>
 

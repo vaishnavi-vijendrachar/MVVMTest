@@ -41,7 +41,7 @@ public class WebserviceRepository {
             @Override
             public void onResponse(Call<Result> call, retrofit2.Response<Result> response) {
                 if(response.isSuccessful()) {
-                    simulateDelay();
+                    //simulateDelay();
                     Result result = response.body();
                     String title = result.title.toString();
                     row = result.rows;

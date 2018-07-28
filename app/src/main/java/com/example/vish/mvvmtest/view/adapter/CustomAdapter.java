@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
+import com.bumptech.glide.Glide;
 import com.example.vish.mvvmtest.R;
 import com.example.vish.mvvmtest.databinding.ListRowBinding;
 import com.example.vish.mvvmtest.service.model.Details;
@@ -55,7 +56,7 @@ public class CustomAdapter extends BaseAdapter {
             rowBinding.setListRow(mList.get(position));
             //viewHolder.subtitle_tv2.setText(mList.get(i).getDescription());
             //Glide to load the images
-            //Glide.with(c.getApplicationContext()).load(mList.get(i).getImageHref()).into(viewHolder.image_iv);
+            Glide.with(c.getApplicationContext()).load(mList.get(position).getImageHref()).into(rowBinding.imageView);
         }
 
         return  rowBinding.getRoot();
